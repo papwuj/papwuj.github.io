@@ -556,17 +556,12 @@ hexo-cli@^4.3.2:
     resolve "^1.20.0"
     tildify "^2.0.0"
 
-hexo-deployer-git@^4.0.0:
-  version "4.0.0"
-  resolved "https://repo.huaweicloud.com/repository/npm/hexo-deployer-git/-/hexo-deployer-git-4.0.0.tgz#d507ecd5ba7d07f60b0c1ab50ced3e47535f6017"
-  integrity sha512-28t1Q+4taB/UaBAP52W3mD/wcCwa2y2zBieUfBJFBZudbmVgiKJB5YedYILeyI5QByaUKAOwoupmdTbocdQ+CQ==
+hexo-filter-date-from-git@^0.2.0:
+  version "0.2.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/hexo-filter-date-from-git/-/hexo-filter-date-from-git-0.2.0.tgz#139e9d1f7188893d52fbbb1c740fd1c32ec376b4"
+  integrity sha512-wfy12bhJPpTpKrjq8+mlk3m78TSkHgtwQWF1XzB9M4fF3ttVy4cNpCnQMbvxm+QViLf+4/DRxaWwSGMLXrZdtw==
   dependencies:
-    bluebird "^3.7.2"
-    hexo-fs "^4.0.0"
-    hexo-util "^2.7.0"
-    luxon "^3.0.4"
-    nunjucks "^3.2.3"
-    picocolors "^1.0.0"
+    moment-timezone "^0.5.4"
 
 hexo-front-matter@^4.2.1:
   version "4.2.1"
@@ -575,7 +570,7 @@ hexo-front-matter@^4.2.1:
   dependencies:
     js-yaml "^4.1.0"
 
-hexo-fs@^4.0.0, hexo-fs@^4.1.1, hexo-fs@^4.1.3:
+hexo-fs@^4.1.1, hexo-fs@^4.1.3:
   version "4.1.3"
   resolved "https://repo.huaweicloud.com/repository/npm/hexo-fs/-/hexo-fs-4.1.3.tgz#c64c66e230dad4ec08ca21244327aa0aba69218a"
   integrity sha512-Q92zQ5PlVDouvSWFLXQoFSTLIUIODikUJs2BfAXQglyOEjN1dOQn1Z5Nimk/7GHof17R5h/uObCQLnZAjzI2tg==
@@ -599,12 +594,29 @@ hexo-generator-category@^2.0.0:
   dependencies:
     hexo-pagination "3.0.0"
 
+hexo-generator-feed@^3.0.0:
+  version "3.0.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/hexo-generator-feed/-/hexo-generator-feed-3.0.0.tgz#4126ef5e308264c42599fb0efdaf88ed11fa599e"
+  integrity sha512-Jo35VSRSNeMitS2JmjCq3OHAXXYU4+JIODujHtubdG/NRj2++b3Tgyz9pwTmROx6Yxr2php/hC8og5AGZHh8UQ==
+  dependencies:
+    hexo-util "^2.1.0"
+    nunjucks "^3.0.0"
+
 hexo-generator-index@^4.0.0:
   version "4.0.0"
   resolved "https://repo.huaweicloud.com/repository/npm/hexo-generator-index/-/hexo-generator-index-4.0.0.tgz#2f20cf9d231db30edbccd5be32c92c8aeb5d6d63"
   integrity sha512-KeM7mOCKWINGFAk1E+CkjMMgqFIv8oaRbGxR7ipkQAp44o4aopkVftma4sdIplOq9WQEWfVYDUK5gEv9J3nzUg==
   dependencies:
     hexo-pagination "3.0.0"
+
+hexo-generator-sitemap@^3.0.1:
+  version "3.0.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/hexo-generator-sitemap/-/hexo-generator-sitemap-3.0.1.tgz#6183995f918330c06d99aa18ca9de81dd8055841"
+  integrity sha512-n+0KLNmq6TLbiZPTQF6NY5MbEem/O+DFx0lgQZNQcU4tdjXIZRrQJs+KRKeT66NTkdlYTqb4WwCxswLqQz0crA==
+  dependencies:
+    hexo-util "^2.1.0"
+    micromatch "^4.0.2"
+    nunjucks "^3.1.6"
 
 hexo-generator-tag@^2.0.0:
   version "2.0.0"
@@ -671,12 +683,12 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-landscape@^1.0.0:
-  version "1.0.0"
-  resolved "https://repo.huaweicloud.com/repository/npm/hexo-theme-landscape/-/hexo-theme-landscape-1.0.0.tgz#43a549ebb2bea73196200ee4397feb764131a481"
-  integrity sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==
+hexo-theme-kratos-rebirth@3.0.0-alpha.2:
+  version "3.0.0-alpha.2"
+  resolved "https://repo.huaweicloud.com/repository/npm/hexo-theme-kratos-rebirth/-/hexo-theme-kratos-rebirth-3.0.0-alpha.2.tgz#8c2ee7764c40f8f17b99276248eb7c372995c54b"
+  integrity sha512-1dObpz59TgFCLxB3NwZv2Axb8djnw8KurLkLuXkAelmEM1j4XBQHfVzlqkAkWDqvcvipyGc+keIxpp9L0fUswQ==
 
-hexo-util@^2.7.0:
+hexo-util@^2.1.0:
   version "2.7.0"
   resolved "https://repo.huaweicloud.com/repository/npm/hexo-util/-/hexo-util-2.7.0.tgz#13d09292e79d260db35399710b3e19f3995443a3"
   integrity sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==
@@ -703,7 +715,7 @@ hexo-util@^3.0.1, hexo-util@^3.1.0, hexo-util@^3.3.0:
     prismjs "^1.29.0"
     strip-indent "^3.0.0"
 
-hexo@^7.1.1:
+hexo@^7.3.0:
   version "7.3.0"
   resolved "https://repo.huaweicloud.com/repository/npm/hexo/-/hexo-7.3.0.tgz#a9a487874c5ed71c22e91e32dd5d825709a1474f"
   integrity sha512-dOe8mzBKrvjubW5oBmyhcnQDpC+M2xmAMLae5K+o+SkHxyvAhShkS2VQZoTsOLIJKY6xilv7dzCjCvE7ol/NHQ==
@@ -938,11 +950,6 @@ lru-cache@^10.4.3:
   resolved "https://repo.huaweicloud.com/repository/npm/lru-cache/-/lru-cache-10.4.3.tgz#410fc8a17b70e598013df257c2446b7f3383f119"
   integrity sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==
 
-luxon@^3.0.4:
-  version "3.5.0"
-  resolved "https://repo.huaweicloud.com/repository/npm/luxon/-/luxon-3.5.0.tgz#6b6f65c5cd1d61d1fd19dbf07ee87a50bf4b8e20"
-  integrity sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==
-
 marked@^15.0.4:
   version "15.0.7"
   resolved "https://repo.huaweicloud.com/repository/npm/marked/-/marked-15.0.7.tgz#f67d7e34d202ce087e6b879107b5efb04e743314"
@@ -953,7 +960,7 @@ micro-memoize@^4.1.2:
   resolved "https://repo.huaweicloud.com/repository/npm/micro-memoize/-/micro-memoize-4.1.3.tgz#17d5df0702acf575503cbf09df90fe691c12825f"
   integrity sha512-DzRMi8smUZXT7rCGikRwldEh6eO6qzKiPPopcr1+2EY3AYKpy5fu159PKWwIS9A6IWnrvPKDMcuFtyrroZa8Bw==
 
-micromatch@^4.0.4:
+micromatch@^4.0.2, micromatch@^4.0.4:
   version "4.0.8"
   resolved "https://repo.huaweicloud.com/repository/npm/micromatch/-/micromatch-4.0.8.tgz#d66fa18f3a47076789320b9b1af32bd86d9fa202"
   integrity sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==
@@ -1020,7 +1027,7 @@ moize@^6.1.6:
     fast-equals "^3.0.1"
     micro-memoize "^4.1.2"
 
-moment-timezone@^0.5.34:
+moment-timezone@^0.5.34, moment-timezone@^0.5.4:
   version "0.5.47"
   resolved "https://repo.huaweicloud.com/repository/npm/moment-timezone/-/moment-timezone-0.5.47.tgz#d4d1a21b78372d914d6d69ae285454732a429749"
   integrity sha512-UbNt/JAWS0m/NJOebR0QMRHBk0hu03r5dx9GK8Cs0AS3I81yDcOc9k+DytPItgVvBP7J6Mf6U2n3BPAacAV9oA==
@@ -1076,7 +1083,7 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://repo.huaweicloud.com/repository/npm/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
-nunjucks@^3.2.3:
+nunjucks@^3.0.0, nunjucks@^3.1.6, nunjucks@^3.2.3:
   version "3.2.4"
   resolved "https://repo.huaweicloud.com/repository/npm/nunjucks/-/nunjucks-3.2.4.tgz#f0878eef528ce7b0aa35d67cc6898635fd74649e"
   integrity sha512-26XRV6BhkgK0VOxfbU5cQI+ICFUtMLixv1noZn1tGU38kQH5A5nmmbk/O45xdyBhD1esk47nKrY0mvQpZIhRjQ==

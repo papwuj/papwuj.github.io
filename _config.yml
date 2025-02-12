@@ -6,7 +6,11 @@
 title: 冰块的个人首页
 subtitle: '你心里想成为什么样的人，就会成为什么样的人'
 description: ''
-keywords:
+
+keywords: 
+- hexo
+- theme
+- kratos-rebirth
 author: WuJing
 language: zh
 timezone: ''
@@ -14,9 +18,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://papwuj.github.io
-root: /
-# permalink: :year/:month/:day/:title/
-permalink: :title/
+permalink: posts/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -39,21 +41,23 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: []
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -68,7 +72,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 无家可归的文章君T-T
 category_map:
 tag_map:
 
@@ -101,6 +105,20 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: kratos-rebirth
 
+plugin:
+ - hexo-generator-feed
+ - hexo-generator-sitemap
+
+feed:
+ type: atom
+ path: atom.xml
+ limit: 20
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
@@ -108,3 +126,4 @@ deploy:
     repo: git@github.com:papwuj/papwuj.github.io.git
     branch: gh-pages
     message: gh-pages deploy success
+

@@ -1,6 +1,7 @@
 ---
 title: MySQL
 date: 2023-03-06 23:26:01
+cover: /assets/cover/mysql.svg
 categories:
 - 装机
 - 开发工具
@@ -10,15 +11,15 @@ categories:
 
 ### 初始化数据库
 ```cmd
-D:/soft/MySQL/bin/mysqld--defaults-file=D:/soft/MySQL/my.ini --initialize-insecure --user=mysql
+D:/soft/MySQL/bin/mysqld --defaults-file=D:/soft/MySQL/my.ini --initialize-insecure --user=mysql
 ```
 ### 启动数据库
 ```cmd
-D:/soft/MySQL/bin/mysqld--console
+D:/soft/MySQL/bin/mysqld --console
 ```
 ### 免密码登录
 ```cmd
-D:/soft/MySQL/bin/mysql-u root --skip-password
+D:/soft/MySQL/bin/mysql -u root --skip-password
 ```
 ### 重置root密码
 ```cmd
@@ -26,7 +27,7 @@ ALTER USER'root'@'localhost' IDENTIFIED BY 'root';
 ```
 ### 将MySQL安装成服务
 ```cmd
-D:/soft/MySQL/bin/mysqld--install MySQL --defaults-file=D:/soft/MySQL/my.ini
+D:/soft/MySQL/bin/mysqld --install MySQL --defaults-file=D:/soft/MySQL/my.ini
 ```
  
 ## my.ini 配置文件内容
