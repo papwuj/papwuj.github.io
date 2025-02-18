@@ -2,7 +2,7 @@ import { init, commentCount  } from 'https://unpkg.com/@waline/client@v3/dist/wa
 import { pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/pageview.js';
 
 (() => {
-  const serverURL = 'https://lzijc9kj.api.lncldglobal.com';
+    const serverURL = 'https://vercel-waline-git-main-papwujs-projects.vercel.app/';
   let firstVisit = true;
 
   const loadComments = async () => {
