@@ -9,14 +9,14 @@ search:
 
 # 图片配置
 image:
-  favicon: "/assets/favicon.png" # 站点图标
-  avatar: "/images/avatar.jpeg" # 个人信息挂件上的头像
+  favicon: "/static/assets/favicon.png" # 站点图标
+  avatar: "/static/images/avatar.jpeg" # 个人信息挂件上的头像
   banner:
-    light: "/assets/banner.webp"
-    dark: "/assets/banner_dark.webp"
+    light: "/static/images/banner.webp"
+    dark: "/static/images/banner_dark.webp"
   background:
-    light: "/assets/bg.webp"
-    dark: "/assets/bg.webp"
+    light: "/static/assets/bg.webp"
+    dark: "/static/assets/bg.webp"
 
 # 顶部导航栏配置
 nav:
@@ -82,15 +82,15 @@ share:
 
 # 打赏组件设置
 donate:
-  enable: false
+  enable: true
   title: "大冰块"
   message: 非常感谢您的喜欢！ <i class="fa fa-heart" style="color:#d43f57"></i>
-  qrcode_placeholder: "https://dev.krt.moe/demo-assets/donate.webp"
-  platforms:
-    - name: "模拟支付"
-      icon: "credit-card"
-      color: "skyblue"
-      qrcode: "example_payment"
+  qrcode_placeholder: "/static/images/donate.webp"
+  platforms: []
+    # - name: "模拟支付"
+    #   icon: "credit-card"
+    #   color: "skyblue"
+    #   qrcode: "example_payment"                                                                                            
 
 # 版权说明
 # copyright_notice:
@@ -106,7 +106,8 @@ comments:
       - post
       - page
     template:
-      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH" data-path-hash="$PATH_HASH"></div>
+#      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH" data-path-hash="$PATH_HASH"></div>
+      _shared: ""
       index: ""
       post: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
       page: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
@@ -132,18 +133,18 @@ visit_count:
 ################## 额外的注入代码 ##################
 additional_injections:
   head: |
-    <link rel="stylesheet" href="/effects/snow.css" />
+    <link rel="stylesheet" href="/static/effects/snow.css" />
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-    <link rel="stylesheet" href="/comments/waline.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/static/comments/waline.css" />
+    <link rel="stylesheet" href="/static/css/custom.css" />
 #     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-#     <link rel="stylesheet" href="/comments/gitalk.css" />
+#     <link rel="stylesheet" href="/static/comments/gitalk.css" />
   footer: |
     <canvas id="snow"></canvas>
   after_footer: |
-    <script src="/effects/snow.js"></script>
-    <script src="/effects/cursor-effects.js"></script>
-    <script type="module" src="/comments/waline.js"></script>
-    <script src="/others/random-post-cover.js"></script>
+    <script src="/static/effects/snow.js"></script>
+    <script src="/static/effects/cursor-effects.js"></script>
+    <script type="module" src="/static/comments/waline.js"></script>
+    <script src="/static/others/random-post-cover.js"></script>
 #    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-#    <script src="/comments/gitalk.js"></script>
+#    <script src="/static/comments/gitalk.js"></script>
