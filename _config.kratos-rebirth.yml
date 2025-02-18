@@ -133,17 +133,17 @@ visit_count:
 additional_injections:
   head: |
     <link rel="stylesheet" href="/effects/snow.css" />
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <link rel="stylesheet" href="/comments/gitalk.css" />
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
     <link rel="stylesheet" href="/comments/waline.css" />
     <link rel="stylesheet" href="/css/custom.css" />
+#     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+#     <link rel="stylesheet" href="/comments/gitalk.css" />
   footer: |
     <canvas id="snow"></canvas>
   after_footer: |
     <script src="/effects/snow.js"></script>
     <script src="/effects/cursor-effects.js"></script>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script src="/comments/gitalk.js"></script>
     <script type="module" src="/comments/waline.js"></script>
     <script src="/others/random-post-cover.js"></script>
+#    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+#    <script src="/comments/gitalk.js"></script>
