@@ -137,6 +137,7 @@ additional_injections:
     <link rel="stylesheet" href="/comments/gitalk.css" />
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
     <link rel="stylesheet" href="/comments/waline.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
   footer: |
     <canvas id="snow"></canvas>
   after_footer: |
@@ -145,3 +146,4 @@ additional_injections:
     <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script src="/comments/gitalk.js"></script>
     <script type="module" src="/comments/waline.js"></script>
+    <script src="/others/random-post-cover.js"></script>
