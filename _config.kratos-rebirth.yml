@@ -106,17 +106,17 @@ comments:
       - post
       - page
     template:
-#      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH" data-path-hash="$PATH_HASH"></div>
-      _shared: ""
+      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH" data-path-hash="$PATH_HASH"></div>
+      # _shared: ""
       index: ""
-      post: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
-      page: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
+      # post: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
+      # page: <div id="w-comments" class="kr-comments" data-path="$PATH"></div>
   count:
     enable_at:
       - index
       - post
     template:
-      _shared: <span data-path="$PATH" class="waline-comment-count"> </span>
+      _shared: 
       index: ""
       post: ""
 
@@ -126,7 +126,7 @@ visit_count:
     - index
     - post
   template:
-    _shared: <span data-path="$PATH" class="waline-pageview-count"> </span>
+    _shared: 
     index: ""
     post: ""
 
@@ -134,17 +134,14 @@ visit_count:
 additional_injections:
   head: |
     <link rel="stylesheet" href="/static/effects/snow.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-    <link rel="stylesheet" href="/static/comments/waline.css" />
     <link rel="stylesheet" href="/static/css/custom.css" />
-#     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-#     <link rel="stylesheet" href="/static/comments/gitalk.css" />
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <link rel="stylesheet" href="/static/comments/gitalk.css" />
   footer: |
     <canvas id="snow"></canvas>
   after_footer: |
     <script src="/static/effects/snow.js"></script>
     <script src="/static/effects/cursor-effects.js"></script>
-    <script type="module" src="/static/comments/waline.js"></script>
     <script src="/static/others/random-post-cover.js"></script>
-#    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-#    <script src="/static/comments/gitalk.js"></script>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="/static/comments/gitalk.js"></script>
